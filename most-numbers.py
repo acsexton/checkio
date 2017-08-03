@@ -4,14 +4,13 @@ def checkio(*args):
     for x in args:
         if x == type(str):
             return "Empty"
-        elif x == type(int) or x == type(float):
-            if x > maxArg:
-                maxArg = x
-            elif x < maxArg:
-                minArg = x
         else:
-            pass
-        return maxArg - minArg
+            # Get args
+            maxArg = max(args)
+            minArg = min(args)
+    diff = maxArg - minArg
+    return diff
+    # Return difference max - minimum arg
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
