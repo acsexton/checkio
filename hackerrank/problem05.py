@@ -31,8 +31,9 @@ def is_leap(year):
 
     return leap
 
-print(is_leap(1900)) # False
-print(is_leap(1990)) # False
-print(is_leap(2000)) # True
-print(is_leap(2400)) # True
-print(is_leap(2500)) # False
+
+assert(is_leap(1900) == False)
+assert(is_leap(1990) == False)
+assert(is_leap(2000) == True)
+assert(is_leap(2400) == True)
+assert(is_leap(2500) == False)
